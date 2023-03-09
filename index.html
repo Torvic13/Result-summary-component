@@ -14,46 +14,63 @@
 </head>
 
 <body>
+
   <main>
     <div class="blue-card">
-      Your Result
+      <h2 id="result-title">Your Result</h2>
 
       <div class="stats-circle">
-        76
-        of 100
+        <h2>76</h2>
+        <span>of 100</span>
       </div>
-      Great
-      You scored higher than 65% of the people who have taken these tests.
+
+      <h1>Great</h1>
+      <p>You scored higher than 65% of the people who have taken these tests.</p>
     </div>
-    <div class="stats">
-      <div class="text-container">
+
+    <div class="text-container">
       <span id="summary">Summary</span>
-      <p class="self-stat" id="reaction">
-        Reaction
-        80 / 100
-      </p>
 
-      <p class="self-stat" id="memory">
-        Memory
-        92 / 100
-      </p>
+      <div class="self-stat">
 
-      <p class="self-stat" id="verbal">
-        Verbal
-        61 / 100
-      </p>
-      <p class="self-stat" id="visual">
-        Visual
-        72 / 100
-      </p>
-      <input type="button" id="cta" value="Continue">
+        <span class="name-icon">
+          <img src="./img/lightning-icon.svg" alt="lightning-icon" id="lightning"><span class="stats-name" id="reaction">Reaction</span>
+        </span>
+        <span class="number-stat">80</span><span class="global-stat"> / 100</span>
       </div>
+
+      <div class="self-stat">
+
+        <span class="name-icon">
+          <img src="./img/brain-icon.svg" alt="brain-icon" id="brain"><span class="stats-name" id="memory">Memory</span>
+        </span>
+        <span class="number-stat">92</span><span class="global-stat"> / 100</span>
+      </div>
+
+      <div class="self-stat">
+        <span class="name-icon">
+          <img src="./img/bubble-icon.svg" alt="text-bubble-icon" id="bubble"><span class="stats-name" id="verbal">Verbal</span>
+        </span>
+        <span class="number-stat num">61</span><span class="global-stat"> / 100</span>
+
+      </div>
+
+      <div class="self-stat">
+        <span class="name-icon">
+          <img src="./img/eye-icon.svg" alt="eye-icon" id="eye"><span class="stats-name" id="visual">Visual</span>
+        </span>
+        <span class="number-stat num">72</span><span class="global-stat"> / 100</span>
+      </div>
+
+      <input type="button" id="cta" value="Continue">
+
     </div>
   </main>
-  <div class="attribution">
+
+  <footer>
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+    Coded by <a href="#">Victor Chabeau</a>.
+  </footer>
 </body>
 
 </html>

@@ -1,4 +1,11 @@
+@font-face {
+    font-family: "Outfit";
+    src: url("./font/Outfit/Outfit-VariableFont_wght.ttf");
+}
+
 html {
+    font-family: "Outfit";
+
     height: 100vh;
     width: 100vw;
 }
@@ -11,7 +18,7 @@ body {
     height: 100vh;
     width: 100vw;
 
-    background-color:azure;
+    background-color: #eaeaea;
 }
 
 main {
@@ -21,9 +28,9 @@ main {
 
     margin: auto;
     height: 500px;
-    width: 40vw;
+    width: 600px;
     border-radius: 20px;
-    box-shadow: 12px 12px 2px 1px rgba(0, 0, 0, .2);
+    box-shadow: 0px 12px 15px 0px rgba(0, 0, 0, 15%);
     overflow: hidden;
 
     background-color: white;
@@ -32,47 +39,268 @@ main {
 }
 
 .blue-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
     align-self: flex-start;
     order: 1;
 
-    height: 100%;
+    color: white;
+    font-weight: 200;
+
+    height: 480px;
     width: 50%;
-    padding: 15px;
+    border-radius: 20px;
+    padding: 20px 20px 0px 20px;
 
     background-color: steelblue;
+    background-image: linear-gradient(to top, #332DDC, #6842FD);
+}
+
+h2#result-title {
+    order: 1;
+
+    margin: 0px;
+
+    font-weight: 200;
 }
 
 .stats-circle {
-    border-radius: 5vw;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    align-items: center;
+    order: 2;
 
-    background-color: blue;
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+
+    font-size: 2rem;
+
+    overflow: hidden;
+
+    background-color: #4634F3;
+}
+
+.stats-circle h2 {
+    order: 1;
+
+    margin-bottom: 15px;
+}
+
+.stats-circle span {
+    justify-self: center;
+    align-self: center;
+    order: 2;
+
+    font-size: 1.3rem;
+    font-weight: 200;
+    color: grey;
+}
+
+h1 {
+    order: 3;
+}
+
+p {
+    order: 4;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    order: 2;
+    align-self: center;
+    justify-self: center;
+    
+    height: 95%;
+    width: 50%;
+    padding: 20px;
+}
+
+#summary {
+    align-self: flex-start;
+}
+
+img {
+    align-items: center;
+    order: 1;
+
+    width: 20px;
+    height: 20px;
+
+    margin-left: 15px;#
+}
+
+.self-stat {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 50px;
+    min-width: 230px;
+    /* padding: */ 
+
+    background-color: #F0F4F4;
+}
+
+.stats-name {
+    display: flex;
+    order: 2;
+
+    margin-left: 15px;
+}
+
+.name-icon {
+    display: flex;
+}
+
+.number-stat {
+    order: 3;
+
+    margin-left: 70px;
+}
+
+.global-stat {
+    order: 4;
+
+    margin-right: 15px;
+
+    color: grey;
+}
+
+.num {
+    margin-left: 85px;
+}
+
+#reaction {
+    color: #ff0000;
+}
+
+#memory {
+    color: #ffff00;
+}
+
+#verbal {
+    color: #90ee90;
+}
+
+#visual {
+    color: #0000ff;
+}
+
+#lightning {
+    filter: invert(19%) sepia(93%) saturate(6184%) hue-rotate(7deg) brightness(99%) contrast(130%);
+}
+
+#brain {
+    filter: invert(92%) sepia(33%) saturate(1928%) hue-rotate(354deg) brightness(111%) contrast(103%);
+}
+
+#bubble {
+    filter: invert(94%) sepia(8%) saturate(2362%) hue-rotate(56deg) brightness(98%) contrast(90%);
+}
+
+#eye {
+    filter: invert(6%) sepia(100%) saturate(7398%) hue-rotate(248deg) brightness(123%) contrast(144%);
+}
+
+#cta {
+    align-self: center;
+    order: 6;
+
+    height: 50px;
+    width: 230px;
+    padding: 0px;
+    border-radius: 25px;
+
+    color: white;
+
+    background-color: #303B5A;
+    border: none;
+}
+
+#cta:hover {
+    background-image: linear-gradient(to top, #332DDC, #6842FD);
 }
 
 .stats {
     order: 2;
     
-
-    width: 100%;
+    width: 300px;
     height: 100%;
-    padding: 15px;
-}
-
-.text-container {
     
 }
 
-#cta {
-    align-self: flex-end;
-    justify-self: center;
-}
-
-.attribution {
+footer {
     order: 2;
 
     font-size: 11px;
     text-align: center;
 }
 
-.attribution a {
+footer a {
     color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 600px) {
+    html {
+        margin: 0px;
+
+        background-color: white;
+    }
+    
+    body {
+        height: 100vh;
+
+        
+    }
+
+    main {
+        flex-flow: row wrap;
+        
+        box-shadow: none;
+        border-radius: 0px;
+        height: 100vh;
+        
+
+        overflow: visible;
+    
+    }
+    
+    .blue-card {
+        order: 1;
+
+        height: 40%;
+        width: 100%;
+        border-radius: 0px 0px 20px 20px;
+    }
+
+    .text-container {
+        order: 2;
+        flex-direction: column;
+        
+        justify-self: center;
+
+        
+        margin: auto;
+
+        height: 60%;
+
+    }
+
+    .self-stat {
+        width: 100%;
+        align-self: center;
+    }
+
+    footer {
+        display: none;
+        visibility : hidden;
+
+        z-index: -100;
+    }
 }
